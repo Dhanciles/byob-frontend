@@ -22,7 +22,7 @@ ShallowWrapper {
         <header
           className="App-header"
         />,
-        <UNDEFINED />,
+        <EndPointContainer />,
       ],
       "className": "App",
     },
@@ -46,7 +46,7 @@ ShallowWrapper {
         "props": Object {},
         "ref": null,
         "rendered": null,
-        "type": undefined,
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -61,7 +61,7 @@ ShallowWrapper {
           <header
             className="App-header"
           />,
-          <UNDEFINED />,
+          <EndPointContainer />,
         ],
         "className": "App",
       },
@@ -85,7 +85,7 @@ ShallowWrapper {
           "props": Object {},
           "ref": null,
           "rendered": null,
-          "type": undefined,
+          "type": [Function],
         },
       ],
       "type": "div",
