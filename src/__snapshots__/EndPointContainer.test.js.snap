@@ -1,0 +1,1870 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EndPointContainer should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EndPointContainer />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "capital": false,
+                    "created_at": "2019-02-05T00:54:20.896Z",
+                    "id": 1,
+                    "name": "New York City",
+                    "population": 8622698,
+                    "state": "NY",
+                    "updated_at": "2019-02-05T00:54:20.896Z",
+                  },
+                  Object {
+                    "capital": false,
+                    "created_at": "2019-02-05T00:54:20.906Z",
+                    "id": 3,
+                    "name": "Los Angeles",
+                    "population": 3999759,
+                    "state": "CA",
+                    "updated_at": "2019-02-05T00:54:20.906Z",
+                  },
+                  Object {
+                    "capital": false,
+                    "created_at": "2019-02-05T00:54:20.906Z",
+                    "id": 2,
+                    "name": "Chicago",
+                    "population": 2716450,
+                    "state": "IL",
+                    "updated_at": "2019-02-05T00:54:20.906Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/cities",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": null,
+              "returns": "an array of all cities in the database",
+              "successful_status_code": 200,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {
+                "request": Object {
+                  "capital": false,
+                  "name": "New York City",
+                  "population": 8622698,
+                  "state": "NY",
+                },
+              },
+              "method": "POST",
+              "path": "/api/v1/cities",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": Array [
+                "name",
+                "state",
+                "population",
+                "capital",
+              ],
+              "returns": "all properties with new id",
+              "successful_status_code": 201,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "address": "Chelsea Market, 75 9th Avenue, New York 10011",
+                    "avg_cost": "$25",
+                    "city": "New York City",
+                    "city_id": 1,
+                    "created_at": "2019-02-05T00:54:20.932Z",
+                    "id": 1,
+                    "name": "Los Tacos No. 1",
+                    "rating": 4,
+                    "updated_at": "2019-02-05T00:54:20.932Z",
+                  },
+                  Object {
+                    "address": "1556 2Nd Avenue 10028",
+                    "avg_cost": "$60",
+                    "city": "New York City",
+                    "city_id": 1,
+                    "created_at": "2019-02-05T00:54:20.935Z",
+                    "id": 3,
+                    "name": "Cascabel Taqueria",
+                    "rating": 4,
+                    "updated_at": "2019-02-05T00:54:20.935Z",
+                  },
+                  Object {
+                    "address": "303 West 48th Street, New York 10036",
+                    "avg_cost": "$65",
+                    "city": "New York City",
+                    "city_id": 1,
+                    "created_at": "2019-02-05T00:54:20.936Z",
+                    "id": 2,
+                    "name": "Sombrero",
+                    "rating": 2,
+                    "updated_at": "2019-02-05T00:54:20.936Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/restaurants",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": null,
+              "returns": "an array of all restaurants in the database",
+              "successful_status_code": 200,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "capital": true,
+                    "created_at": "2019-02-05T00:54:20.920Z",
+                    "id": 19,
+                    "name": "Denver",
+                    "population": 704621,
+                    "state": "CO",
+                    "updated_at": "2019-02-05T00:54:20.920Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/cities/:id",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": null,
+              "returns": "an array of any cities in the database that match the given id",
+              "successful_status_code": 200,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {
+                "request": Object {
+                  "address": "Chelsea Market, 75 9th Avenue, New York 10011",
+                  "avg_cost": "$25",
+                  "city": "New York City",
+                  "name": "Los Tacos No. 1",
+                  "rating": 4,
+                },
+              },
+              "method": "PUT",
+              "path": "/api/v1/cities/:id",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": Array [
+                "name",
+                "address",
+                "city",
+                "rating",
+                "avg_cost",
+              ],
+              "returns": "confirmation message",
+              "successful_status_code": 202,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {},
+              "method": "DELETE",
+              "path": "/api/v1/cities/:id",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": "none",
+              "returns": "status code only",
+              "successful_status_code": 204,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "address": "2817 East 3rd Avenue, Denver 80206",
+                    "avg_cost": "$25",
+                    "city": "Denver",
+                    "city_id": 19,
+                    "created_at": "2019-02-05T00:54:21.037Z",
+                    "id": 204,
+                    "name": "Machete Tequila + Tacos",
+                    "rating": 3,
+                    "updated_at": "2019-02-05T00:54:21.037Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/restaurants/:id",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": "none",
+              "returns": "an array of any restaurants in the database that match the id",
+              "successful_status_code": 200,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {
+                "request": Object {
+                  "address": "2817 East 3rd Avenue, Denver 80206",
+                  "avg_cost": "$25",
+                  "city": "Denver",
+                  "name": "Machete Tequila + Tacos",
+                  "rating": 3,
+                },
+              },
+              "method": "PUT",
+              "path": "/api/v1/restaurants/:id",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": Array [
+                "name",
+                "address",
+                "city",
+                "rating",
+                "avg_cost",
+              ],
+              "returns": "all properties with new id",
+              "successful_status_code": 201,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {},
+              "method": "DELETE",
+              "path": "/api/v1/restaurants/:id",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": "none",
+              "returns": "response code only",
+              "successful_status_code": 204,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "address": "200 Fillmore Street, Denver 80206",
+                    "avg_cost": "$10",
+                    "city": "Denver",
+                    "city_id": 19,
+                    "created_at": "2019-02-05T00:54:21.038Z",
+                    "id": 205,
+                    "name": "Margs Taco Bistro",
+                    "rating": 3,
+                    "updated_at": "2019-02-05T00:54:21.038Z",
+                  },
+                  Object {
+                    "address": "9675 Washington Street 80229",
+                    "avg_cost": "$25",
+                    "city": "Denver",
+                    "city_id": 19,
+                    "created_at": "2019-02-05T00:54:21.038Z",
+                    "id": 206,
+                    "name": "Taco John's",
+                    "rating": 0,
+                    "updated_at": "2019-02-05T00:54:21.038Z",
+                  },
+                  Object {
+                    "address": "1085 North Broadway 80203",
+                    "avg_cost": "$25",
+                    "city": "Denver",
+                    "city_id": 19,
+                    "created_at": "2019-02-05T00:54:21.039Z",
+                    "id": 207,
+                    "name": "Torchy's Tacos",
+                    "rating": 3,
+                    "updated_at": "2019-02-05T00:54:21.039Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/cities/:id/restaurants",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": "none",
+              "returns": "an array of restaurants that have matching city ids",
+              "successful_status_code": 200,
+            }
+          }
+        />,
+        <EndPointItem
+          data={
+            Object {
+              "examples": Object {
+                "request": Object {
+                  "address": "1085 North Broadway 80203",
+                  "avg_cost": "$25",
+                  "city": "Denver",
+                  "name": "Torchy's Tacos",
+                  "rating": 3,
+                },
+              },
+              "method": "POST",
+              "path": "/api/v1/cities/:id/restaurants",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": Array [
+                "name",
+                "address",
+                "rating",
+                "avg_cost",
+              ],
+              "returns": "all properties with id",
+              "successful_status_code": 201,
+            }
+          }
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0985af73-fff3-4321-91d6-3931550ef167",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {
+              "response": Array [
+                Object {
+                  "capital": false,
+                  "created_at": "2019-02-05T00:54:20.896Z",
+                  "id": 1,
+                  "name": "New York City",
+                  "population": 8622698,
+                  "state": "NY",
+                  "updated_at": "2019-02-05T00:54:20.896Z",
+                },
+                Object {
+                  "capital": false,
+                  "created_at": "2019-02-05T00:54:20.906Z",
+                  "id": 3,
+                  "name": "Los Angeles",
+                  "population": 3999759,
+                  "state": "CA",
+                  "updated_at": "2019-02-05T00:54:20.906Z",
+                },
+                Object {
+                  "capital": false,
+                  "created_at": "2019-02-05T00:54:20.906Z",
+                  "id": 2,
+                  "name": "Chicago",
+                  "population": 2716450,
+                  "state": "IL",
+                  "updated_at": "2019-02-05T00:54:20.906Z",
+                },
+              ],
+            },
+            "method": "GET",
+            "path": "/api/v1/cities",
+            "properties": Object {
+              "capital": "boolean",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "population": "number",
+              "state": "string",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": null,
+            "returns": "an array of all cities in the database",
+            "successful_status_code": 200,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "e6ce6a53-e9f4-43a0-b9cb-2a4028dce3bb",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {
+              "request": Object {
+                "capital": false,
+                "name": "New York City",
+                "population": 8622698,
+                "state": "NY",
+              },
+            },
+            "method": "POST",
+            "path": "/api/v1/cities",
+            "properties": Object {
+              "capital": "boolean",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "population": "number",
+              "state": "string",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": Array [
+              "name",
+              "state",
+              "population",
+              "capital",
+            ],
+            "returns": "all properties with new id",
+            "successful_status_code": 201,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "840fd6e0-057f-483c-8bcf-4dbc0ec0daad",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {
+              "response": Array [
+                Object {
+                  "address": "Chelsea Market, 75 9th Avenue, New York 10011",
+                  "avg_cost": "$25",
+                  "city": "New York City",
+                  "city_id": 1,
+                  "created_at": "2019-02-05T00:54:20.932Z",
+                  "id": 1,
+                  "name": "Los Tacos No. 1",
+                  "rating": 4,
+                  "updated_at": "2019-02-05T00:54:20.932Z",
+                },
+                Object {
+                  "address": "1556 2Nd Avenue 10028",
+                  "avg_cost": "$60",
+                  "city": "New York City",
+                  "city_id": 1,
+                  "created_at": "2019-02-05T00:54:20.935Z",
+                  "id": 3,
+                  "name": "Cascabel Taqueria",
+                  "rating": 4,
+                  "updated_at": "2019-02-05T00:54:20.935Z",
+                },
+                Object {
+                  "address": "303 West 48th Street, New York 10036",
+                  "avg_cost": "$65",
+                  "city": "New York City",
+                  "city_id": 1,
+                  "created_at": "2019-02-05T00:54:20.936Z",
+                  "id": 2,
+                  "name": "Sombrero",
+                  "rating": 2,
+                  "updated_at": "2019-02-05T00:54:20.936Z",
+                },
+              ],
+            },
+            "method": "GET",
+            "path": "/api/v1/restaurants",
+            "properties": Object {
+              "address": "string",
+              "avg_cost": "string",
+              "city_id": "number",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "rating": "number",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": null,
+            "returns": "an array of all restaurants in the database",
+            "successful_status_code": 200,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "ac6ce904-74b5-44c9-b592-cd23eca47d55",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {
+              "response": Array [
+                Object {
+                  "capital": true,
+                  "created_at": "2019-02-05T00:54:20.920Z",
+                  "id": 19,
+                  "name": "Denver",
+                  "population": 704621,
+                  "state": "CO",
+                  "updated_at": "2019-02-05T00:54:20.920Z",
+                },
+              ],
+            },
+            "method": "GET",
+            "path": "/api/v1/cities/:id",
+            "properties": Object {
+              "capital": "boolean",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "population": "number",
+              "state": "string",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": null,
+            "returns": "an array of any cities in the database that match the given id",
+            "successful_status_code": 200,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "db37fa6c-b542-4daa-b91c-a5813266c379",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {
+              "request": Object {
+                "address": "Chelsea Market, 75 9th Avenue, New York 10011",
+                "avg_cost": "$25",
+                "city": "New York City",
+                "name": "Los Tacos No. 1",
+                "rating": 4,
+              },
+            },
+            "method": "PUT",
+            "path": "/api/v1/cities/:id",
+            "properties": Object {
+              "capital": "boolean",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "population": "number",
+              "state": "string",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": Array [
+              "name",
+              "address",
+              "city",
+              "rating",
+              "avg_cost",
+            ],
+            "returns": "confirmation message",
+            "successful_status_code": 202,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "0e770713-873b-4352-a6fc-401758d57b64",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {},
+            "method": "DELETE",
+            "path": "/api/v1/cities/:id",
+            "properties": Object {
+              "capital": "boolean",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "population": "number",
+              "state": "string",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": "none",
+            "returns": "status code only",
+            "successful_status_code": 204,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "da105b19-4540-4659-976c-99ba0749ff62",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {
+              "response": Array [
+                Object {
+                  "address": "2817 East 3rd Avenue, Denver 80206",
+                  "avg_cost": "$25",
+                  "city": "Denver",
+                  "city_id": 19,
+                  "created_at": "2019-02-05T00:54:21.037Z",
+                  "id": 204,
+                  "name": "Machete Tequila + Tacos",
+                  "rating": 3,
+                  "updated_at": "2019-02-05T00:54:21.037Z",
+                },
+              ],
+            },
+            "method": "GET",
+            "path": "/api/v1/restaurants/:id",
+            "properties": Object {
+              "address": "string",
+              "avg_cost": "string",
+              "city_id": "number",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "rating": "number",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": "none",
+            "returns": "an array of any restaurants in the database that match the id",
+            "successful_status_code": 200,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "86f0d62c-7865-428c-b066-36b3ffdabdad",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {
+              "request": Object {
+                "address": "2817 East 3rd Avenue, Denver 80206",
+                "avg_cost": "$25",
+                "city": "Denver",
+                "name": "Machete Tequila + Tacos",
+                "rating": 3,
+              },
+            },
+            "method": "PUT",
+            "path": "/api/v1/restaurants/:id",
+            "properties": Object {
+              "address": "string",
+              "avg_cost": "string",
+              "city_id": "number",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "rating": "number",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": Array [
+              "name",
+              "address",
+              "city",
+              "rating",
+              "avg_cost",
+            ],
+            "returns": "all properties with new id",
+            "successful_status_code": 201,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3dfcb1d3-87c8-4e1d-bbdb-b33ed6642ee0",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {},
+            "method": "DELETE",
+            "path": "/api/v1/restaurants/:id",
+            "properties": Object {
+              "address": "string",
+              "avg_cost": "string",
+              "city_id": "number",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "rating": "number",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": "none",
+            "returns": "response code only",
+            "successful_status_code": 204,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "b1d3e463-818e-4500-a372-fa2ec8a0ecb8",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {
+              "response": Array [
+                Object {
+                  "address": "200 Fillmore Street, Denver 80206",
+                  "avg_cost": "$10",
+                  "city": "Denver",
+                  "city_id": 19,
+                  "created_at": "2019-02-05T00:54:21.038Z",
+                  "id": 205,
+                  "name": "Margs Taco Bistro",
+                  "rating": 3,
+                  "updated_at": "2019-02-05T00:54:21.038Z",
+                },
+                Object {
+                  "address": "9675 Washington Street 80229",
+                  "avg_cost": "$25",
+                  "city": "Denver",
+                  "city_id": 19,
+                  "created_at": "2019-02-05T00:54:21.038Z",
+                  "id": 206,
+                  "name": "Taco John's",
+                  "rating": 0,
+                  "updated_at": "2019-02-05T00:54:21.038Z",
+                },
+                Object {
+                  "address": "1085 North Broadway 80203",
+                  "avg_cost": "$25",
+                  "city": "Denver",
+                  "city_id": 19,
+                  "created_at": "2019-02-05T00:54:21.039Z",
+                  "id": 207,
+                  "name": "Torchy's Tacos",
+                  "rating": 3,
+                  "updated_at": "2019-02-05T00:54:21.039Z",
+                },
+              ],
+            },
+            "method": "GET",
+            "path": "/api/v1/cities/:id/restaurants",
+            "properties": Object {
+              "address": "string",
+              "avg_cost": "string",
+              "city_id": "number",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "rating": "number",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": "none",
+            "returns": "an array of restaurants that have matching city ids",
+            "successful_status_code": 200,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "25a14521-63d0-4f95-92d6-6581ca51cb11",
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "examples": Object {
+              "request": Object {
+                "address": "1085 North Broadway 80203",
+                "avg_cost": "$25",
+                "city": "Denver",
+                "name": "Torchy's Tacos",
+                "rating": 3,
+              },
+            },
+            "method": "POST",
+            "path": "/api/v1/cities/:id/restaurants",
+            "properties": Object {
+              "address": "string",
+              "avg_cost": "string",
+              "city_id": "number",
+              "created_at": "timestamp",
+              "id": "number",
+              "name": "string",
+              "rating": "number",
+              "updated_at": "timestamp",
+            },
+            "request_should_include": Array [
+              "name",
+              "address",
+              "rating",
+              "avg_cost",
+            ],
+            "returns": "all properties with id",
+            "successful_status_code": 201,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {
+                  "response": Array [
+                    Object {
+                      "capital": false,
+                      "created_at": "2019-02-05T00:54:20.896Z",
+                      "id": 1,
+                      "name": "New York City",
+                      "population": 8622698,
+                      "state": "NY",
+                      "updated_at": "2019-02-05T00:54:20.896Z",
+                    },
+                    Object {
+                      "capital": false,
+                      "created_at": "2019-02-05T00:54:20.906Z",
+                      "id": 3,
+                      "name": "Los Angeles",
+                      "population": 3999759,
+                      "state": "CA",
+                      "updated_at": "2019-02-05T00:54:20.906Z",
+                    },
+                    Object {
+                      "capital": false,
+                      "created_at": "2019-02-05T00:54:20.906Z",
+                      "id": 2,
+                      "name": "Chicago",
+                      "population": 2716450,
+                      "state": "IL",
+                      "updated_at": "2019-02-05T00:54:20.906Z",
+                    },
+                  ],
+                },
+                "method": "GET",
+                "path": "/api/v1/cities",
+                "properties": Object {
+                  "capital": "boolean",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "population": "number",
+                  "state": "string",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": null,
+                "returns": "an array of all cities in the database",
+                "successful_status_code": 200,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {
+                  "request": Object {
+                    "capital": false,
+                    "name": "New York City",
+                    "population": 8622698,
+                    "state": "NY",
+                  },
+                },
+                "method": "POST",
+                "path": "/api/v1/cities",
+                "properties": Object {
+                  "capital": "boolean",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "population": "number",
+                  "state": "string",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": Array [
+                  "name",
+                  "state",
+                  "population",
+                  "capital",
+                ],
+                "returns": "all properties with new id",
+                "successful_status_code": 201,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {
+                  "response": Array [
+                    Object {
+                      "address": "Chelsea Market, 75 9th Avenue, New York 10011",
+                      "avg_cost": "$25",
+                      "city": "New York City",
+                      "city_id": 1,
+                      "created_at": "2019-02-05T00:54:20.932Z",
+                      "id": 1,
+                      "name": "Los Tacos No. 1",
+                      "rating": 4,
+                      "updated_at": "2019-02-05T00:54:20.932Z",
+                    },
+                    Object {
+                      "address": "1556 2Nd Avenue 10028",
+                      "avg_cost": "$60",
+                      "city": "New York City",
+                      "city_id": 1,
+                      "created_at": "2019-02-05T00:54:20.935Z",
+                      "id": 3,
+                      "name": "Cascabel Taqueria",
+                      "rating": 4,
+                      "updated_at": "2019-02-05T00:54:20.935Z",
+                    },
+                    Object {
+                      "address": "303 West 48th Street, New York 10036",
+                      "avg_cost": "$65",
+                      "city": "New York City",
+                      "city_id": 1,
+                      "created_at": "2019-02-05T00:54:20.936Z",
+                      "id": 2,
+                      "name": "Sombrero",
+                      "rating": 2,
+                      "updated_at": "2019-02-05T00:54:20.936Z",
+                    },
+                  ],
+                },
+                "method": "GET",
+                "path": "/api/v1/restaurants",
+                "properties": Object {
+                  "address": "string",
+                  "avg_cost": "string",
+                  "city_id": "number",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "rating": "number",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": null,
+                "returns": "an array of all restaurants in the database",
+                "successful_status_code": 200,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {
+                  "response": Array [
+                    Object {
+                      "capital": true,
+                      "created_at": "2019-02-05T00:54:20.920Z",
+                      "id": 19,
+                      "name": "Denver",
+                      "population": 704621,
+                      "state": "CO",
+                      "updated_at": "2019-02-05T00:54:20.920Z",
+                    },
+                  ],
+                },
+                "method": "GET",
+                "path": "/api/v1/cities/:id",
+                "properties": Object {
+                  "capital": "boolean",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "population": "number",
+                  "state": "string",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": null,
+                "returns": "an array of any cities in the database that match the given id",
+                "successful_status_code": 200,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {
+                  "request": Object {
+                    "address": "Chelsea Market, 75 9th Avenue, New York 10011",
+                    "avg_cost": "$25",
+                    "city": "New York City",
+                    "name": "Los Tacos No. 1",
+                    "rating": 4,
+                  },
+                },
+                "method": "PUT",
+                "path": "/api/v1/cities/:id",
+                "properties": Object {
+                  "capital": "boolean",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "population": "number",
+                  "state": "string",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": Array [
+                  "name",
+                  "address",
+                  "city",
+                  "rating",
+                  "avg_cost",
+                ],
+                "returns": "confirmation message",
+                "successful_status_code": 202,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {},
+                "method": "DELETE",
+                "path": "/api/v1/cities/:id",
+                "properties": Object {
+                  "capital": "boolean",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "population": "number",
+                  "state": "string",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": "none",
+                "returns": "status code only",
+                "successful_status_code": 204,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {
+                  "response": Array [
+                    Object {
+                      "address": "2817 East 3rd Avenue, Denver 80206",
+                      "avg_cost": "$25",
+                      "city": "Denver",
+                      "city_id": 19,
+                      "created_at": "2019-02-05T00:54:21.037Z",
+                      "id": 204,
+                      "name": "Machete Tequila + Tacos",
+                      "rating": 3,
+                      "updated_at": "2019-02-05T00:54:21.037Z",
+                    },
+                  ],
+                },
+                "method": "GET",
+                "path": "/api/v1/restaurants/:id",
+                "properties": Object {
+                  "address": "string",
+                  "avg_cost": "string",
+                  "city_id": "number",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "rating": "number",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": "none",
+                "returns": "an array of any restaurants in the database that match the id",
+                "successful_status_code": 200,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {
+                  "request": Object {
+                    "address": "2817 East 3rd Avenue, Denver 80206",
+                    "avg_cost": "$25",
+                    "city": "Denver",
+                    "name": "Machete Tequila + Tacos",
+                    "rating": 3,
+                  },
+                },
+                "method": "PUT",
+                "path": "/api/v1/restaurants/:id",
+                "properties": Object {
+                  "address": "string",
+                  "avg_cost": "string",
+                  "city_id": "number",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "rating": "number",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": Array [
+                  "name",
+                  "address",
+                  "city",
+                  "rating",
+                  "avg_cost",
+                ],
+                "returns": "all properties with new id",
+                "successful_status_code": 201,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {},
+                "method": "DELETE",
+                "path": "/api/v1/restaurants/:id",
+                "properties": Object {
+                  "address": "string",
+                  "avg_cost": "string",
+                  "city_id": "number",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "rating": "number",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": "none",
+                "returns": "response code only",
+                "successful_status_code": 204,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {
+                  "response": Array [
+                    Object {
+                      "address": "200 Fillmore Street, Denver 80206",
+                      "avg_cost": "$10",
+                      "city": "Denver",
+                      "city_id": 19,
+                      "created_at": "2019-02-05T00:54:21.038Z",
+                      "id": 205,
+                      "name": "Margs Taco Bistro",
+                      "rating": 3,
+                      "updated_at": "2019-02-05T00:54:21.038Z",
+                    },
+                    Object {
+                      "address": "9675 Washington Street 80229",
+                      "avg_cost": "$25",
+                      "city": "Denver",
+                      "city_id": 19,
+                      "created_at": "2019-02-05T00:54:21.038Z",
+                      "id": 206,
+                      "name": "Taco John's",
+                      "rating": 0,
+                      "updated_at": "2019-02-05T00:54:21.038Z",
+                    },
+                    Object {
+                      "address": "1085 North Broadway 80203",
+                      "avg_cost": "$25",
+                      "city": "Denver",
+                      "city_id": 19,
+                      "created_at": "2019-02-05T00:54:21.039Z",
+                      "id": 207,
+                      "name": "Torchy's Tacos",
+                      "rating": 3,
+                      "updated_at": "2019-02-05T00:54:21.039Z",
+                    },
+                  ],
+                },
+                "method": "GET",
+                "path": "/api/v1/cities/:id/restaurants",
+                "properties": Object {
+                  "address": "string",
+                  "avg_cost": "string",
+                  "city_id": "number",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "rating": "number",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": "none",
+                "returns": "an array of restaurants that have matching city ids",
+                "successful_status_code": 200,
+              }
+            }
+          />,
+          <EndPointItem
+            data={
+              Object {
+                "examples": Object {
+                  "request": Object {
+                    "address": "1085 North Broadway 80203",
+                    "avg_cost": "$25",
+                    "city": "Denver",
+                    "name": "Torchy's Tacos",
+                    "rating": 3,
+                  },
+                },
+                "method": "POST",
+                "path": "/api/v1/cities/:id/restaurants",
+                "properties": Object {
+                  "address": "string",
+                  "avg_cost": "string",
+                  "city_id": "number",
+                  "created_at": "timestamp",
+                  "id": "number",
+                  "name": "string",
+                  "rating": "number",
+                  "updated_at": "timestamp",
+                },
+                "request_should_include": Array [
+                  "name",
+                  "address",
+                  "rating",
+                  "avg_cost",
+                ],
+                "returns": "all properties with id",
+                "successful_status_code": 201,
+              }
+            }
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0985af73-fff3-4321-91d6-3931550ef167",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "capital": false,
+                    "created_at": "2019-02-05T00:54:20.896Z",
+                    "id": 1,
+                    "name": "New York City",
+                    "population": 8622698,
+                    "state": "NY",
+                    "updated_at": "2019-02-05T00:54:20.896Z",
+                  },
+                  Object {
+                    "capital": false,
+                    "created_at": "2019-02-05T00:54:20.906Z",
+                    "id": 3,
+                    "name": "Los Angeles",
+                    "population": 3999759,
+                    "state": "CA",
+                    "updated_at": "2019-02-05T00:54:20.906Z",
+                  },
+                  Object {
+                    "capital": false,
+                    "created_at": "2019-02-05T00:54:20.906Z",
+                    "id": 2,
+                    "name": "Chicago",
+                    "population": 2716450,
+                    "state": "IL",
+                    "updated_at": "2019-02-05T00:54:20.906Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/cities",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": null,
+              "returns": "an array of all cities in the database",
+              "successful_status_code": 200,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "e6ce6a53-e9f4-43a0-b9cb-2a4028dce3bb",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {
+                "request": Object {
+                  "capital": false,
+                  "name": "New York City",
+                  "population": 8622698,
+                  "state": "NY",
+                },
+              },
+              "method": "POST",
+              "path": "/api/v1/cities",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": Array [
+                "name",
+                "state",
+                "population",
+                "capital",
+              ],
+              "returns": "all properties with new id",
+              "successful_status_code": 201,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "840fd6e0-057f-483c-8bcf-4dbc0ec0daad",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "address": "Chelsea Market, 75 9th Avenue, New York 10011",
+                    "avg_cost": "$25",
+                    "city": "New York City",
+                    "city_id": 1,
+                    "created_at": "2019-02-05T00:54:20.932Z",
+                    "id": 1,
+                    "name": "Los Tacos No. 1",
+                    "rating": 4,
+                    "updated_at": "2019-02-05T00:54:20.932Z",
+                  },
+                  Object {
+                    "address": "1556 2Nd Avenue 10028",
+                    "avg_cost": "$60",
+                    "city": "New York City",
+                    "city_id": 1,
+                    "created_at": "2019-02-05T00:54:20.935Z",
+                    "id": 3,
+                    "name": "Cascabel Taqueria",
+                    "rating": 4,
+                    "updated_at": "2019-02-05T00:54:20.935Z",
+                  },
+                  Object {
+                    "address": "303 West 48th Street, New York 10036",
+                    "avg_cost": "$65",
+                    "city": "New York City",
+                    "city_id": 1,
+                    "created_at": "2019-02-05T00:54:20.936Z",
+                    "id": 2,
+                    "name": "Sombrero",
+                    "rating": 2,
+                    "updated_at": "2019-02-05T00:54:20.936Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/restaurants",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": null,
+              "returns": "an array of all restaurants in the database",
+              "successful_status_code": 200,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "ac6ce904-74b5-44c9-b592-cd23eca47d55",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "capital": true,
+                    "created_at": "2019-02-05T00:54:20.920Z",
+                    "id": 19,
+                    "name": "Denver",
+                    "population": 704621,
+                    "state": "CO",
+                    "updated_at": "2019-02-05T00:54:20.920Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/cities/:id",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": null,
+              "returns": "an array of any cities in the database that match the given id",
+              "successful_status_code": 200,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "db37fa6c-b542-4daa-b91c-a5813266c379",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {
+                "request": Object {
+                  "address": "Chelsea Market, 75 9th Avenue, New York 10011",
+                  "avg_cost": "$25",
+                  "city": "New York City",
+                  "name": "Los Tacos No. 1",
+                  "rating": 4,
+                },
+              },
+              "method": "PUT",
+              "path": "/api/v1/cities/:id",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": Array [
+                "name",
+                "address",
+                "city",
+                "rating",
+                "avg_cost",
+              ],
+              "returns": "confirmation message",
+              "successful_status_code": 202,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "0e770713-873b-4352-a6fc-401758d57b64",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {},
+              "method": "DELETE",
+              "path": "/api/v1/cities/:id",
+              "properties": Object {
+                "capital": "boolean",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "population": "number",
+                "state": "string",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": "none",
+              "returns": "status code only",
+              "successful_status_code": 204,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "da105b19-4540-4659-976c-99ba0749ff62",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "address": "2817 East 3rd Avenue, Denver 80206",
+                    "avg_cost": "$25",
+                    "city": "Denver",
+                    "city_id": 19,
+                    "created_at": "2019-02-05T00:54:21.037Z",
+                    "id": 204,
+                    "name": "Machete Tequila + Tacos",
+                    "rating": 3,
+                    "updated_at": "2019-02-05T00:54:21.037Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/restaurants/:id",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": "none",
+              "returns": "an array of any restaurants in the database that match the id",
+              "successful_status_code": 200,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "86f0d62c-7865-428c-b066-36b3ffdabdad",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {
+                "request": Object {
+                  "address": "2817 East 3rd Avenue, Denver 80206",
+                  "avg_cost": "$25",
+                  "city": "Denver",
+                  "name": "Machete Tequila + Tacos",
+                  "rating": 3,
+                },
+              },
+              "method": "PUT",
+              "path": "/api/v1/restaurants/:id",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": Array [
+                "name",
+                "address",
+                "city",
+                "rating",
+                "avg_cost",
+              ],
+              "returns": "all properties with new id",
+              "successful_status_code": 201,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3dfcb1d3-87c8-4e1d-bbdb-b33ed6642ee0",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {},
+              "method": "DELETE",
+              "path": "/api/v1/restaurants/:id",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": "none",
+              "returns": "response code only",
+              "successful_status_code": 204,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "b1d3e463-818e-4500-a372-fa2ec8a0ecb8",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {
+                "response": Array [
+                  Object {
+                    "address": "200 Fillmore Street, Denver 80206",
+                    "avg_cost": "$10",
+                    "city": "Denver",
+                    "city_id": 19,
+                    "created_at": "2019-02-05T00:54:21.038Z",
+                    "id": 205,
+                    "name": "Margs Taco Bistro",
+                    "rating": 3,
+                    "updated_at": "2019-02-05T00:54:21.038Z",
+                  },
+                  Object {
+                    "address": "9675 Washington Street 80229",
+                    "avg_cost": "$25",
+                    "city": "Denver",
+                    "city_id": 19,
+                    "created_at": "2019-02-05T00:54:21.038Z",
+                    "id": 206,
+                    "name": "Taco John's",
+                    "rating": 0,
+                    "updated_at": "2019-02-05T00:54:21.038Z",
+                  },
+                  Object {
+                    "address": "1085 North Broadway 80203",
+                    "avg_cost": "$25",
+                    "city": "Denver",
+                    "city_id": 19,
+                    "created_at": "2019-02-05T00:54:21.039Z",
+                    "id": 207,
+                    "name": "Torchy's Tacos",
+                    "rating": 3,
+                    "updated_at": "2019-02-05T00:54:21.039Z",
+                  },
+                ],
+              },
+              "method": "GET",
+              "path": "/api/v1/cities/:id/restaurants",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": "none",
+              "returns": "an array of restaurants that have matching city ids",
+              "successful_status_code": 200,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "25a14521-63d0-4f95-92d6-6581ca51cb11",
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "examples": Object {
+                "request": Object {
+                  "address": "1085 North Broadway 80203",
+                  "avg_cost": "$25",
+                  "city": "Denver",
+                  "name": "Torchy's Tacos",
+                  "rating": 3,
+                },
+              },
+              "method": "POST",
+              "path": "/api/v1/cities/:id/restaurants",
+              "properties": Object {
+                "address": "string",
+                "avg_cost": "string",
+                "city_id": "number",
+                "created_at": "timestamp",
+                "id": "number",
+                "name": "string",
+                "rating": "number",
+                "updated_at": "timestamp",
+              },
+              "request_should_include": Array [
+                "name",
+                "address",
+                "rating",
+                "avg_cost",
+              ],
+              "returns": "all properties with id",
+              "successful_status_code": 201,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
