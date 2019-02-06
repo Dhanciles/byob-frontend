@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import { EndPointContainer }  from './EndPointContainer.js'
-import image from './images/taco.jpg'
 
 class App extends Component {
   render() { 
@@ -14,7 +13,6 @@ class App extends Component {
           <h3 className="header-subtext">Find Top Tacos Across the US!</h3>
         </header>
         <div className="taco-image-container">
-          <img className="tacos-image" src={image} alt="A plate full of tacos"/>
         </div>
         <EndPointContainer />
       </div>

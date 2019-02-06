@@ -17,3 +17,14 @@
 .header-subtext {
   font-size: 1.5rem; 
 }
+
+.taco-image-container {
+  width: 100%; 
+  height: 700px; 
+  background: url('./images/tacos-2.jpg');
+  background-position: right center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  margin-bottom: 30px;  
+}
+
