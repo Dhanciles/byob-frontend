@@ -7,15 +7,36 @@ export default class EndPointItem extends Component {
     selected: false
     }
   }
+
+  handleClick = (event) => {
+    this.setState({
+      selected: !this.state.selected
+    })
+  }
   
   render() {
-    const { method, path, } = this.props.data
+    const { method, path, examples, successful_status_code, returns } = this.props.data;
+    let itemBody = ''
+    if(this.state.selected) {
+      itemBody = (
+        <div className="info-area">
+          <h3>Example {Object.keys(examples)[0]}:</h3>
+          <pre>{examples.request || 'None'}</pre>
+          <p>Successful Status Code: <span>{successful_status_code}</span></p>
+          <p>This endpoint returns: {returns}</p>
+          <h3>Example {Object.keys(examples)[1]}:</h3>
+          <pre>{examples.response}</pre>
+        </div>
+      )
+    }
+
     return (
       <div className="endpoint-item-container">
-        <button>{method}</button>
+        <button onClick={this.handleClick}>{method}</button>
         <span className="endpoint-text-container">
           <p className="url-path">{path}</p>
         </span>
+        {itemBody}
       </div>
     );
   }
