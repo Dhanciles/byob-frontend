@@ -1,5 +1,5 @@
 import React from 'react'; 
-import endpointData from '../endpoints-data.js'; 
+import endpointData from './endpoints-data.js'; 
 import EndPointItem from './EndPointItem.js'; 
 import uuid from 'uuid'; 
 
