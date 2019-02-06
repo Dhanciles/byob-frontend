@@ -13,7 +13,8 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        response: [
+        request: null,
+        response: `[
           {
               "id": 1,
               "name": "New York City",
@@ -40,7 +41,8 @@ module.exports = {
               "capital": false,
               "created_at": "2019-02-05T00:54:20.906Z",
               "updated_at": "2019-02-05T00:54:20.906Z"
-          }]
+          }
+        ]`
       },
       request_should_include: null,
       successful_status_code: 200,
@@ -60,12 +62,21 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        request: {
+        request: `{
           "name": "New York City",
           "state": "NY",
           "population": 8622698,
           "capital": false,
-        }
+        }`,
+        response: `{
+          "id": 3,
+          "name": "Los Angeles",
+          "state": "CA",
+          "population": 3999759,
+          "capital": false,
+          "created_at": "2019-02-05T00:54:20.906Z",
+          "updated_at": "2019-02-05T00:54:20.906Z"
+        }`
       },
       request_should_include: ['name', 'state', 'population', 'capital'],
       successful_status_code: 201,
@@ -86,7 +97,8 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        response: [
+        request: null,
+        response: `[
           {
               "id": 1,
               "name": "Los Tacos No. 1",
@@ -120,7 +132,7 @@ module.exports = {
               "created_at": "2019-02-05T00:54:20.936Z",
               "updated_at": "2019-02-05T00:54:20.936Z"
           }
-        ]
+        ]`
       },
       request_should_include: null,
       successful_status_code: 200,
@@ -140,7 +152,8 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        response: [
+        request: null,
+        response: `[
           {
             "id": 19,
             "name": "Denver",
@@ -150,7 +163,7 @@ module.exports = {
             "created_at": "2019-02-05T00:54:20.920Z",
             "updated_at": "2019-02-05T00:54:20.920Z"
           }
-        ]
+        ]`
       },
       request_should_include: null,
       successful_status_code: 200,
@@ -170,15 +183,15 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        request: {
-          "name": "Los Tacos No. 1",
-          "address": "Chelsea Market, 75 9th Avenue, New York 10011",
-          "city": "New York City",
-          "rating": 4,
-          "avg_cost": "$25",
-        }
+        request: `{
+          "name": "Denver",
+          "state": "CO",
+          "population": 704621,
+          "capital": true,
+        }`,
+        response: 'City with id 19 was successfully updated.'
       },
-      request_should_include: ['name', 'address', 'city', 'rating', 'avg_cost'],
+      request_should_include: ['name', 'state', 'population', 'capital'],
       successful_status_code: 202,
       returns: 'confirmation message'
     },
@@ -195,7 +208,10 @@ module.exports = {
         created_at: 'timestamp', 
         updated_at: 'timestamp'
       },
-      examples: {},
+      examples: {
+        request: null,
+        response: null
+      },
       request_should_include: 'none',
       successful_status_code: 204,
       returns: 'status code only'
@@ -214,7 +230,8 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        response: [
+        request: null, 
+        response: `[
           {
             "id": 204,
             "name": "Machete Tequila + Tacos",
@@ -226,7 +243,7 @@ module.exports = {
             "created_at": "2019-02-05T00:54:21.037Z",
             "updated_at": "2019-02-05T00:54:21.037Z"
           }
-        ]
+        ]`
       },
       request_should_include: 'none',
       successful_status_code: 200,
@@ -246,13 +263,14 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        request: {
+        request: `{
           "name": "Machete Tequila + Tacos",
           "address": "2817 East 3rd Avenue, Denver 80206",
           "city": "Denver",
           "rating": 3,
           "avg_cost": "$25",
-        }
+        }`,
+        response: 'Restaurant with id 204 was successfully updated.'
       },
       request_should_include: ['name', 'address', 'city', 'rating', 'avg_cost'],
       successful_status_code: 201,
@@ -272,8 +290,11 @@ module.exports = {
         created_at: 'timestamp', 
         updated_at: 'timestamp'
       },
-      examples: {},
-      request_should_include: 'none',
+      examples: {
+        request: null,
+        response: null
+      },
+      request_should_include: null,
       successful_status_code: 204,
       returns: 'response code only'
     },
@@ -291,7 +312,8 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        response: [
+        request: null,
+        response: `[
           {
               "id": 205,
               "name": "Margs Taco Bistro",
@@ -325,7 +347,7 @@ module.exports = {
               "created_at": "2019-02-05T00:54:21.039Z",
               "updated_at": "2019-02-05T00:54:21.039Z"
           }
-        ]
+        ]`
       },
       request_should_include: 'none',
       successful_status_code: 200,
@@ -346,13 +368,24 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        request: {
+        request: `{
           "name": "Torchy's Tacos",
           "address": "1085 North Broadway 80203",
           "city": "Denver",
           "rating": 3,
           "avg_cost": "$25"
-        }
+        }`,
+        response: `{
+          "id": 207,
+          "name": "Torchy's Tacos",
+          "address": "1085 North Broadway 80203",
+          "city": "Denver",
+          "rating": 3,
+          "avg_cost": "$25",
+          "city_id": 19,
+          "created_at": "2019-02-05T00:54:21.039Z",
+          "updated_at": "2019-02-05T00:54:21.039Z"
+        }`
       },
       request_should_include: ['name', 'address', 'rating', 'avg_cost'],
       successful_status_code: 201,
