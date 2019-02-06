@@ -9,7 +9,7 @@ class App extends Component {
       <div className="app-container">
         <header className="doc-header">
         <span className="logo-container">
-          <h1 className="logo-text">Taco Restaurant API</h1>
+          <h1 className="logo-text">Taco Restaurants API</h1>
         </span>
           <h3 className="header-subtext">Find Top Tacos Across the US!</h3>
         </header>

@@ -1,1 +1,19 @@
+.doc-header {
+  background-color: #E60000;
+  color: #ffffff; 
+  font-family: 'Fira Sans', sans-serif;
+  height: 200px; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around; 
+  padding: 10px; 
+}
 
+.logo-text {
+  margin: 0; 
+  font-size: 3rem; 
+}
+
+.header-subtext {
+  font-size: 1.5rem; 
+}
