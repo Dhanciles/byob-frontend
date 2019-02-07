@@ -10,9 +10,13 @@
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.doc-aside {
+.doc-header {
+  width: 100%;
   background-color: #6a2800;
   color: #ffffff; 
   font-family: 'Fira Sans', sans-serif;
@@ -44,7 +48,11 @@
   font-size: 1.5rem; 
 }
 
-h3, p {
+h3 {
+  margin: 20px 0 0 0;
+} 
+
+p {
   margin: 0;
 }
 
@@ -53,11 +61,6 @@ pre {
   background: lightgray;
   padding: 20px;
   color: black;
-}
-
-button {
-  width: 100px;
-  border-radius: 5px;
 }
 
 .url-path {
@@ -93,13 +96,6 @@ button {
   margin-left: 20px;
 }
 
-pre {
-  text-align: left;
-  background: lightgray;
-  padding: 20px 30px 40px 0;
-  color: black;
-}
-
 button {
   width: 200px;
   cursor: pointer; 
@@ -112,30 +108,19 @@ button:hover {
   color: #ffffff; 
 }
 
-.endpoint-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.info-area {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-}
-
-.endpoint-item-container {
-  background: #808080;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  color: white;
-}
-
 .button-and-path-container {
   display: flex;
   justify-content: flex-start;
   background-color: #364F5C; 
 }
 
+.about {
+  background: #a3d68f;
+  width: 60%;
+  margin: 50px;
+  padding: 20px;
+}
+
+.about h2 {
+  margin: 0 0 20px 0;
+}
