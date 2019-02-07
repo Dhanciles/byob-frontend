@@ -10,9 +10,13 @@
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .doc-header {
+  width: 100%;
   background-color: #6a2800;
   color: #ffffff; 
   font-family: 'Fira Sans', sans-serif;
@@ -115,4 +119,15 @@ button {
 .button-and-path-container {
   display: flex;
   justify-content: flex-start;
+}
+
+.about {
+  background: #a3d68f;
+  width: 60%;
+  margin: 50px;
+  padding: 20px;
+}
+
+.about h2 {
+  margin: 0 0 20px 0;
 }
