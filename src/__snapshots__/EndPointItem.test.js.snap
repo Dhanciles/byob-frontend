@@ -1,386 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EndPointItem should match snapshot 1`] = `
+exports[`EndPointItem should match snapshot when selected is false 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <EndPointItem
     data={
-      Array [
-        Object {
-          "examples": Object {
-            "response": Array [
-              Object {
-                "capital": false,
-                "created_at": "2019-02-05T00:54:20.896Z",
-                "id": 1,
-                "name": "New York City",
-                "population": 8622698,
-                "state": "NY",
-                "updated_at": "2019-02-05T00:54:20.896Z",
-              },
-              Object {
-                "capital": false,
-                "created_at": "2019-02-05T00:54:20.906Z",
-                "id": 3,
-                "name": "Los Angeles",
-                "population": 3999759,
-                "state": "CA",
-                "updated_at": "2019-02-05T00:54:20.906Z",
-              },
-              Object {
-                "capital": false,
-                "created_at": "2019-02-05T00:54:20.906Z",
-                "id": 2,
-                "name": "Chicago",
-                "population": 2716450,
-                "state": "IL",
-                "updated_at": "2019-02-05T00:54:20.906Z",
-              },
-            ],
+      Object {
+        "examples": Object {
+          "request": null,
+          "response": "
+        [
+          {
+              \\"id\\": 1,
+              \\"name\\": \\"New York City\\",
+              \\"state\\": \\"NY\\",
+              \\"population\\": 8622698,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.896Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.896Z\\"
           },
-          "method": "GET",
-          "path": "/api/v1/cities",
-          "properties": Object {
-            "capital": "boolean",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "population": "number",
-            "state": "string",
-            "updated_at": "timestamp",
+          {
+              \\"id\\": 3,
+              \\"name\\": \\"Los Angeles\\",
+              \\"state\\": \\"CA\\",
+              \\"population\\": 3999759,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
           },
-          "request_should_include": null,
-          "returns": "an array of all cities in the database",
-          "successful_status_code": 200,
+          {
+              \\"id\\": 2,
+              \\"name\\": \\"Chicago\\",
+              \\"state\\": \\"IL\\",
+              \\"population\\": 2716450,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          }
+        ]",
         },
-        Object {
-          "examples": Object {
-            "request": Object {
-              "capital": false,
-              "name": "New York City",
-              "population": 8622698,
-              "state": "NY",
-            },
-          },
-          "method": "POST",
-          "path": "/api/v1/cities",
-          "properties": Object {
-            "capital": "boolean",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "population": "number",
-            "state": "string",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": Array [
-            "name",
-            "state",
-            "population",
-            "capital",
-          ],
-          "returns": "all properties with new id",
-          "successful_status_code": 201,
+        "method": "GET",
+        "path": "/api/v1/cities",
+        "properties": Object {
+          "capital": "boolean",
+          "created_at": "timestamp",
+          "id": "number",
+          "name": "string",
+          "population": "number",
+          "state": "string",
+          "updated_at": "timestamp",
         },
-        Object {
-          "examples": Object {
-            "response": Array [
-              Object {
-                "address": "Chelsea Market, 75 9th Avenue, New York 10011",
-                "avg_cost": "$25",
-                "city": "New York City",
-                "city_id": 1,
-                "created_at": "2019-02-05T00:54:20.932Z",
-                "id": 1,
-                "name": "Los Tacos No. 1",
-                "rating": 4,
-                "updated_at": "2019-02-05T00:54:20.932Z",
-              },
-              Object {
-                "address": "1556 2Nd Avenue 10028",
-                "avg_cost": "$60",
-                "city": "New York City",
-                "city_id": 1,
-                "created_at": "2019-02-05T00:54:20.935Z",
-                "id": 3,
-                "name": "Cascabel Taqueria",
-                "rating": 4,
-                "updated_at": "2019-02-05T00:54:20.935Z",
-              },
-              Object {
-                "address": "303 West 48th Street, New York 10036",
-                "avg_cost": "$65",
-                "city": "New York City",
-                "city_id": 1,
-                "created_at": "2019-02-05T00:54:20.936Z",
-                "id": 2,
-                "name": "Sombrero",
-                "rating": 2,
-                "updated_at": "2019-02-05T00:54:20.936Z",
-              },
-            ],
-          },
-          "method": "GET",
-          "path": "/api/v1/restaurants",
-          "properties": Object {
-            "address": "string",
-            "avg_cost": "string",
-            "city_id": "number",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "rating": "number",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": null,
-          "returns": "an array of all restaurants in the database",
-          "successful_status_code": 200,
-        },
-        Object {
-          "examples": Object {
-            "response": Array [
-              Object {
-                "capital": true,
-                "created_at": "2019-02-05T00:54:20.920Z",
-                "id": 19,
-                "name": "Denver",
-                "population": 704621,
-                "state": "CO",
-                "updated_at": "2019-02-05T00:54:20.920Z",
-              },
-            ],
-          },
-          "method": "GET",
-          "path": "/api/v1/cities/:id",
-          "properties": Object {
-            "capital": "boolean",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "population": "number",
-            "state": "string",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": null,
-          "returns": "an array of any cities in the database that match the given id",
-          "successful_status_code": 200,
-        },
-        Object {
-          "examples": Object {
-            "request": Object {
-              "address": "Chelsea Market, 75 9th Avenue, New York 10011",
-              "avg_cost": "$25",
-              "city": "New York City",
-              "name": "Los Tacos No. 1",
-              "rating": 4,
-            },
-          },
-          "method": "PUT",
-          "path": "/api/v1/cities/:id",
-          "properties": Object {
-            "capital": "boolean",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "population": "number",
-            "state": "string",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": Array [
-            "name",
-            "address",
-            "city",
-            "rating",
-            "avg_cost",
-          ],
-          "returns": "confirmation message",
-          "successful_status_code": 202,
-        },
-        Object {
-          "examples": Object {},
-          "method": "DELETE",
-          "path": "/api/v1/cities/:id",
-          "properties": Object {
-            "capital": "boolean",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "population": "number",
-            "state": "string",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": "none",
-          "returns": "status code only",
-          "successful_status_code": 204,
-        },
-        Object {
-          "examples": Object {
-            "response": Array [
-              Object {
-                "address": "2817 East 3rd Avenue, Denver 80206",
-                "avg_cost": "$25",
-                "city": "Denver",
-                "city_id": 19,
-                "created_at": "2019-02-05T00:54:21.037Z",
-                "id": 204,
-                "name": "Machete Tequila + Tacos",
-                "rating": 3,
-                "updated_at": "2019-02-05T00:54:21.037Z",
-              },
-            ],
-          },
-          "method": "GET",
-          "path": "/api/v1/restaurants/:id",
-          "properties": Object {
-            "address": "string",
-            "avg_cost": "string",
-            "city_id": "number",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "rating": "number",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": "none",
-          "returns": "an array of any restaurants in the database that match the id",
-          "successful_status_code": 200,
-        },
-        Object {
-          "examples": Object {
-            "request": Object {
-              "address": "2817 East 3rd Avenue, Denver 80206",
-              "avg_cost": "$25",
-              "city": "Denver",
-              "name": "Machete Tequila + Tacos",
-              "rating": 3,
-            },
-          },
-          "method": "PUT",
-          "path": "/api/v1/restaurants/:id",
-          "properties": Object {
-            "address": "string",
-            "avg_cost": "string",
-            "city_id": "number",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "rating": "number",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": Array [
-            "name",
-            "address",
-            "city",
-            "rating",
-            "avg_cost",
-          ],
-          "returns": "all properties with new id",
-          "successful_status_code": 201,
-        },
-        Object {
-          "examples": Object {},
-          "method": "DELETE",
-          "path": "/api/v1/restaurants/:id",
-          "properties": Object {
-            "address": "string",
-            "avg_cost": "string",
-            "city_id": "number",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "rating": "number",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": "none",
-          "returns": "response code only",
-          "successful_status_code": 204,
-        },
-        Object {
-          "examples": Object {
-            "response": Array [
-              Object {
-                "address": "200 Fillmore Street, Denver 80206",
-                "avg_cost": "$10",
-                "city": "Denver",
-                "city_id": 19,
-                "created_at": "2019-02-05T00:54:21.038Z",
-                "id": 205,
-                "name": "Margs Taco Bistro",
-                "rating": 3,
-                "updated_at": "2019-02-05T00:54:21.038Z",
-              },
-              Object {
-                "address": "9675 Washington Street 80229",
-                "avg_cost": "$25",
-                "city": "Denver",
-                "city_id": 19,
-                "created_at": "2019-02-05T00:54:21.038Z",
-                "id": 206,
-                "name": "Taco John's",
-                "rating": 0,
-                "updated_at": "2019-02-05T00:54:21.038Z",
-              },
-              Object {
-                "address": "1085 North Broadway 80203",
-                "avg_cost": "$25",
-                "city": "Denver",
-                "city_id": 19,
-                "created_at": "2019-02-05T00:54:21.039Z",
-                "id": 207,
-                "name": "Torchy's Tacos",
-                "rating": 3,
-                "updated_at": "2019-02-05T00:54:21.039Z",
-              },
-            ],
-          },
-          "method": "GET",
-          "path": "/api/v1/cities/:id/restaurants",
-          "properties": Object {
-            "address": "string",
-            "avg_cost": "string",
-            "city_id": "number",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "rating": "number",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": "none",
-          "returns": "an array of restaurants that have matching city ids",
-          "successful_status_code": 200,
-        },
-        Object {
-          "examples": Object {
-            "request": Object {
-              "address": "1085 North Broadway 80203",
-              "avg_cost": "$25",
-              "city": "Denver",
-              "name": "Torchy's Tacos",
-              "rating": 3,
-            },
-          },
-          "method": "POST",
-          "path": "/api/v1/cities/:id/restaurants",
-          "properties": Object {
-            "address": "string",
-            "avg_cost": "string",
-            "city_id": "number",
-            "created_at": "timestamp",
-            "id": "number",
-            "name": "string",
-            "rating": "number",
-            "updated_at": "timestamp",
-          },
-          "request_should_include": Array [
-            "name",
-            "address",
-            "rating",
-            "avg_cost",
-          ],
-          "returns": "all properties with id",
-          "successful_status_code": 201,
-        },
-      ]
+        "request_should_include": null,
+        "returns": "an array of all cities in the database",
+        "successful_status_code": 200,
+      }
     }
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -398,16 +71,27 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <button />,
-        <span
-          className="endpoint-text-container"
+        <div
+          className="button-and-path-container"
         >
-          <p
-            className="url-path"
-          />
-        </span>,
+          <button
+            onClick={[Function]}
+          >
+            GET
+          </button>
+          <span
+            className="endpoint-text-container"
+          >
+            <p
+              className="url-path"
+            >
+              /api/v1/cities
+            </p>
+          </span>
+        </div>,
+        "",
       ],
-      "className": "endpoint-item-container",
+      "className": "endpoint-item-container ",
     },
     "ref": null,
     "rendered": Array [
@@ -416,36 +100,651 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            <button
+              onClick={[Function]}
+            >
+              GET
+            </button>,
+            <span
+              className="endpoint-text-container"
+            >
+              <p
+                className="url-path"
+              >
+                /api/v1/cities
+              </p>
+            </span>,
+          ],
+          "className": "button-and-path-container",
         },
         "ref": null,
-        "rendered": null,
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "GET",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "GET",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p
+                className="url-path"
+              >
+                /api/v1/cities
+              </p>,
+              "className": "endpoint-text-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "/api/v1/cities",
+                "className": "url-path",
+              },
+              "ref": null,
+              "rendered": "/api/v1/cities",
+              "type": "p",
+            },
+            "type": "span",
+          },
+        ],
+        "type": "div",
+      },
+      "",
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="button-and-path-container"
+          >
+            <button
+              onClick={[Function]}
+            >
+              GET
+            </button>
+            <span
+              className="endpoint-text-container"
+            >
+              <p
+                className="url-path"
+              >
+                /api/v1/cities
+              </p>
+            </span>
+          </div>,
+          "",
+        ],
+        "className": "endpoint-item-container ",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                onClick={[Function]}
+              >
+                GET
+              </button>,
+              <span
+                className="endpoint-text-container"
+              >
+                <p
+                  className="url-path"
+                >
+                  /api/v1/cities
+                </p>
+              </span>,
+            ],
+            "className": "button-and-path-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "GET",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "GET",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <p
+                  className="url-path"
+                >
+                  /api/v1/cities
+                </p>,
+                "className": "endpoint-text-container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "/api/v1/cities",
+                  "className": "url-path",
+                },
+                "ref": null,
+                "rendered": "/api/v1/cities",
+                "type": "p",
+              },
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        "",
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`EndPointItem should match snapshot when selected is true 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EndPointItem
+    data={
+      Object {
+        "examples": Object {
+          "request": null,
+          "response": "
+        [
+          {
+              \\"id\\": 1,
+              \\"name\\": \\"New York City\\",
+              \\"state\\": \\"NY\\",
+              \\"population\\": 8622698,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.896Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.896Z\\"
+          },
+          {
+              \\"id\\": 3,
+              \\"name\\": \\"Los Angeles\\",
+              \\"state\\": \\"CA\\",
+              \\"population\\": 3999759,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          },
+          {
+              \\"id\\": 2,
+              \\"name\\": \\"Chicago\\",
+              \\"state\\": \\"IL\\",
+              \\"population\\": 2716450,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          }
+        ]",
+        },
+        "method": "GET",
+        "path": "/api/v1/cities",
+        "properties": Object {
+          "capital": "boolean",
+          "created_at": "timestamp",
+          "id": "number",
+          "name": "string",
+          "population": "number",
+          "state": "string",
+          "updated_at": "timestamp",
+        },
+        "request_should_include": null,
+        "returns": "an array of all cities in the database",
+        "successful_status_code": 200,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="button-and-path-container"
+        >
+          <button
+            onClick={[Function]}
+          >
+            GET
+          </button>
+          <span
+            className="endpoint-text-container"
+          >
+            <p
+              className="url-path"
+            >
+              /api/v1/cities
+            </p>
+          </span>
+        </div>,
+        <div
+          className="info-area"
+        >
+          <h3>
+            Example 
+            request
+            :
+          </h3>
+          <pre>
+            None
+          </pre>
+          <p>
+            Successful Status Code: 
+            <span>
+              200
+            </span>
+          </p>
+          <p>
+            This endpoint returns: 
+            an array of all cities in the database
+          </p>
+          <h3>
+            Example 
+            response
+            :
+          </h3>
+          <pre>
+            
+        [
+          {
+              "id": 1,
+              "name": "New York City",
+              "state": "NY",
+              "population": 8622698,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.896Z",
+              "updated_at": "2019-02-05T00:54:20.896Z"
+          },
+          {
+              "id": 3,
+              "name": "Los Angeles",
+              "state": "CA",
+              "population": 3999759,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.906Z",
+              "updated_at": "2019-02-05T00:54:20.906Z"
+          },
+          {
+              "id": 2,
+              "name": "Chicago",
+              "state": "IL",
+              "population": 2716450,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.906Z",
+              "updated_at": "2019-02-05T00:54:20.906Z"
+          }
+        ]
+          </pre>
+        </div>,
+      ],
+      "className": "endpoint-item-container selected",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              onClick={[Function]}
+            >
+              GET
+            </button>,
+            <span
+              className="endpoint-text-container"
+            >
+              <p
+                className="url-path"
+              >
+                /api/v1/cities
+              </p>
+            </span>,
+          ],
+          "className": "button-and-path-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "GET",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "GET",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p
+                className="url-path"
+              >
+                /api/v1/cities
+              </p>,
+              "className": "endpoint-text-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "/api/v1/cities",
+                "className": "url-path",
+              },
+              "ref": null,
+              "rendered": "/api/v1/cities",
+              "type": "p",
+            },
+            "type": "span",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <p
-            className="url-path"
-          />,
-          "className": "endpoint-text-container",
+          "children": Array [
+            <h3>
+              Example 
+              request
+              :
+            </h3>,
+            <pre>
+              None
+            </pre>,
+            <p>
+              Successful Status Code: 
+              <span>
+                200
+              </span>
+            </p>,
+            <p>
+              This endpoint returns: 
+              an array of all cities in the database
+            </p>,
+            <h3>
+              Example 
+              response
+              :
+            </h3>,
+            <pre>
+              
+        [
+          {
+              "id": 1,
+              "name": "New York City",
+              "state": "NY",
+              "population": 8622698,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.896Z",
+              "updated_at": "2019-02-05T00:54:20.896Z"
+          },
+          {
+              "id": 3,
+              "name": "Los Angeles",
+              "state": "CA",
+              "population": 3999759,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.906Z",
+              "updated_at": "2019-02-05T00:54:20.906Z"
+          },
+          {
+              "id": 2,
+              "name": "Chicago",
+              "state": "IL",
+              "population": 2716450,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.906Z",
+              "updated_at": "2019-02-05T00:54:20.906Z"
+          }
+        ]
+            </pre>,
+          ],
+          "className": "info-area",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-            "className": "url-path",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Example ",
+                "request",
+                ":",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Example ",
+              "request",
+              ":",
+            ],
+            "type": "h3",
           },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
-        },
-        "type": "span",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "None",
+            },
+            "ref": null,
+            "rendered": "None",
+            "type": "pre",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Successful Status Code: ",
+                <span>
+                  200
+                </span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Successful Status Code: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 200,
+                },
+                "ref": null,
+                "rendered": 200,
+                "type": "span",
+              },
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "This endpoint returns: ",
+                "an array of all cities in the database",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "This endpoint returns: ",
+              "an array of all cities in the database",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Example ",
+                "response",
+                ":",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Example ",
+              "response",
+              ":",
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "
+        [
+          {
+              \\"id\\": 1,
+              \\"name\\": \\"New York City\\",
+              \\"state\\": \\"NY\\",
+              \\"population\\": 8622698,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.896Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.896Z\\"
+          },
+          {
+              \\"id\\": 3,
+              \\"name\\": \\"Los Angeles\\",
+              \\"state\\": \\"CA\\",
+              \\"population\\": 3999759,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          },
+          {
+              \\"id\\": 2,
+              \\"name\\": \\"Chicago\\",
+              \\"state\\": \\"IL\\",
+              \\"population\\": 2716450,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          }
+        ]",
+            },
+            "ref": null,
+            "rendered": "
+        [
+          {
+              \\"id\\": 1,
+              \\"name\\": \\"New York City\\",
+              \\"state\\": \\"NY\\",
+              \\"population\\": 8622698,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.896Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.896Z\\"
+          },
+          {
+              \\"id\\": 3,
+              \\"name\\": \\"Los Angeles\\",
+              \\"state\\": \\"CA\\",
+              \\"population\\": 3999759,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          },
+          {
+              \\"id\\": 2,
+              \\"name\\": \\"Chicago\\",
+              \\"state\\": \\"IL\\",
+              \\"population\\": 2716450,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          }
+        ]",
+            "type": "pre",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -457,16 +756,85 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button />,
-          <span
-            className="endpoint-text-container"
+          <div
+            className="button-and-path-container"
           >
-            <p
-              className="url-path"
-            />
-          </span>,
+            <button
+              onClick={[Function]}
+            >
+              GET
+            </button>
+            <span
+              className="endpoint-text-container"
+            >
+              <p
+                className="url-path"
+              >
+                /api/v1/cities
+              </p>
+            </span>
+          </div>,
+          <div
+            className="info-area"
+          >
+            <h3>
+              Example 
+              request
+              :
+            </h3>
+            <pre>
+              None
+            </pre>
+            <p>
+              Successful Status Code: 
+              <span>
+                200
+              </span>
+            </p>
+            <p>
+              This endpoint returns: 
+              an array of all cities in the database
+            </p>
+            <h3>
+              Example 
+              response
+              :
+            </h3>
+            <pre>
+              
+        [
+          {
+              "id": 1,
+              "name": "New York City",
+              "state": "NY",
+              "population": 8622698,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.896Z",
+              "updated_at": "2019-02-05T00:54:20.896Z"
+          },
+          {
+              "id": 3,
+              "name": "Los Angeles",
+              "state": "CA",
+              "population": 3999759,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.906Z",
+              "updated_at": "2019-02-05T00:54:20.906Z"
+          },
+          {
+              "id": 2,
+              "name": "Chicago",
+              "state": "IL",
+              "population": 2716450,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.906Z",
+              "updated_at": "2019-02-05T00:54:20.906Z"
+          }
+        ]
+            </pre>
+          </div>,
         ],
-        "className": "endpoint-item-container",
+        "className": "endpoint-item-container selected",
       },
       "ref": null,
       "rendered": Array [
@@ -475,36 +843,300 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              <button
+                onClick={[Function]}
+              >
+                GET
+              </button>,
+              <span
+                className="endpoint-text-container"
+              >
+                <p
+                  className="url-path"
+                >
+                  /api/v1/cities
+                </p>
+              </span>,
+            ],
+            "className": "button-and-path-container",
           },
           "ref": null,
-          "rendered": null,
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "GET",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "GET",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <p
+                  className="url-path"
+                >
+                  /api/v1/cities
+                </p>,
+                "className": "endpoint-text-container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "/api/v1/cities",
+                  "className": "url-path",
+                },
+                "ref": null,
+                "rendered": "/api/v1/cities",
+                "type": "p",
+              },
+              "type": "span",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <p
-              className="url-path"
-            />,
-            "className": "endpoint-text-container",
+            "children": Array [
+              <h3>
+                Example 
+                request
+                :
+              </h3>,
+              <pre>
+                None
+              </pre>,
+              <p>
+                Successful Status Code: 
+                <span>
+                  200
+                </span>
+              </p>,
+              <p>
+                This endpoint returns: 
+                an array of all cities in the database
+              </p>,
+              <h3>
+                Example 
+                response
+                :
+              </h3>,
+              <pre>
+                
+        [
+          {
+              "id": 1,
+              "name": "New York City",
+              "state": "NY",
+              "population": 8622698,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.896Z",
+              "updated_at": "2019-02-05T00:54:20.896Z"
+          },
+          {
+              "id": 3,
+              "name": "Los Angeles",
+              "state": "CA",
+              "population": 3999759,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.906Z",
+              "updated_at": "2019-02-05T00:54:20.906Z"
+          },
+          {
+              "id": 2,
+              "name": "Chicago",
+              "state": "IL",
+              "population": 2716450,
+              "capital": false,
+              "created_at": "2019-02-05T00:54:20.906Z",
+              "updated_at": "2019-02-05T00:54:20.906Z"
+          }
+        ]
+              </pre>,
+            ],
+            "className": "info-area",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": undefined,
-              "className": "url-path",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Example ",
+                  "request",
+                  ":",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Example ",
+                "request",
+                ":",
+              ],
+              "type": "h3",
             },
-            "ref": null,
-            "rendered": null,
-            "type": "p",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "None",
+              },
+              "ref": null,
+              "rendered": "None",
+              "type": "pre",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Successful Status Code: ",
+                  <span>
+                    200
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Successful Status Code: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 200,
+                  },
+                  "ref": null,
+                  "rendered": 200,
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "This endpoint returns: ",
+                  "an array of all cities in the database",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "This endpoint returns: ",
+                "an array of all cities in the database",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Example ",
+                  "response",
+                  ":",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Example ",
+                "response",
+                ":",
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "
+        [
+          {
+              \\"id\\": 1,
+              \\"name\\": \\"New York City\\",
+              \\"state\\": \\"NY\\",
+              \\"population\\": 8622698,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.896Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.896Z\\"
           },
-          "type": "span",
+          {
+              \\"id\\": 3,
+              \\"name\\": \\"Los Angeles\\",
+              \\"state\\": \\"CA\\",
+              \\"population\\": 3999759,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          },
+          {
+              \\"id\\": 2,
+              \\"name\\": \\"Chicago\\",
+              \\"state\\": \\"IL\\",
+              \\"population\\": 2716450,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          }
+        ]",
+              },
+              "ref": null,
+              "rendered": "
+        [
+          {
+              \\"id\\": 1,
+              \\"name\\": \\"New York City\\",
+              \\"state\\": \\"NY\\",
+              \\"population\\": 8622698,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.896Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.896Z\\"
+          },
+          {
+              \\"id\\": 3,
+              \\"name\\": \\"Los Angeles\\",
+              \\"state\\": \\"CA\\",
+              \\"population\\": 3999759,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          },
+          {
+              \\"id\\": 2,
+              \\"name\\": \\"Chicago\\",
+              \\"state\\": \\"IL\\",
+              \\"population\\": 2716450,
+              \\"capital\\": false,
+              \\"created_at\\": \\"2019-02-05T00:54:20.906Z\\",
+              \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
+          }
+        ]",
+              "type": "pre",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
