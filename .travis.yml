@@ -1,5 +1,11 @@
 language: node_js
 node_js:
-  - "node"
-notifications: 
+- node
+notifications:
   email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: OGGCB8N+PBkKo/LmBumoStBKzfLoceoENyCbpgNklBWnzvNK7Cd+LLJH94hEYUbqLEVBTaWj5wA0w6r8L/biP10GJgD6Jnu9ZPRjrphcXLrhN6KQIcAlr31favYTk9XYovlswZHHMWj+UeKZ/BxnitR2r20KfRN39ovJOll/o1FsbTs3YjojOk+yeSnTwo0kscfDDm1AihxoDORAY2ZWAZCGWc4wjAIDXJQdj6E0mNxM8CUO12/F7UK78/q3TC6t1TsBxVsAzFDYYTpWcEkpxXP2h9KW33DXp9pR6qWZ0X3bzSvjhzKU6wNYzxvtLAEJY1AyraEnP0dRBmdXn8k7mgs+hDP0VkoJmrtGuuMn4077xF/UN+8C/w5vRKMfOyD+uUMN/bFlbs7HHsICf6ObxqdH8dS6Scuv6peRApKK9FAS8ZX84Ol9qvTtaTpjlteAPTguFxTn3STHLg2EcxT8sD7TlRVsoFIxMCoC+vRKV8eOFZW06/RUwmejgJxNj3/YJKdpuHlaKH3uA2vULYEhoITszM+/CbfTQeLHtW/d5kIO63By8FLXtpQtjR9qXbXKs9C36sAWl2uqy1hJOtfYUTC+G/epTsV5t2i5Gh4mn7wEs5dX2eNWnLVOIJmA+uMmBsG4G1lA1sLe9eJ0CqBerugyTQ07dlK/9BaJG2BFOpA=
+  app: tacos-restaurants-api-frontend
+  skip_cleanup: true
