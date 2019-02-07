@@ -486,7 +486,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "bdaf6780-b7fd-42b1-9262-777d6dec4806",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -545,7 +545,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "bafc9e86-ebca-491c-a5c3-c9fb315bf10f",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -595,7 +595,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "377f09a4-02c0-48ef-9448-19c7bf2a409b",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -661,7 +661,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "0199e8f1-e5e6-4744-8d04-8979d8aeb3c2",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -702,7 +702,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1dd2ad85-98bc-4c4c-9f10-e8661c0e88b4",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -743,7 +743,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "ff958df6-c85a-44db-9b3e-54f62f99ec35",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -773,7 +773,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "6efab3ca-a48a-4530-bfa0-3e28fd8e4edb",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -817,7 +817,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "b188f7ee-1a01-42cb-8112-fd6afbf96da6",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -861,7 +861,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "570d24a9-9265-4005-994b-4ffdc1e3258c",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -892,7 +892,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "9e2c011f-6168-4df5-9609-b9bf29cc5505",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -958,7 +958,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "403ca9ad-019f-4dff-b704-df87aa2f0967",
+        "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
@@ -1487,7 +1487,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "bdaf6780-b7fd-42b1-9262-777d6dec4806",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1546,7 +1546,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "bafc9e86-ebca-491c-a5c3-c9fb315bf10f",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1596,7 +1596,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "377f09a4-02c0-48ef-9448-19c7bf2a409b",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1662,7 +1662,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "0199e8f1-e5e6-4744-8d04-8979d8aeb3c2",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1703,7 +1703,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1dd2ad85-98bc-4c4c-9f10-e8661c0e88b4",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1744,7 +1744,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "ff958df6-c85a-44db-9b3e-54f62f99ec35",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1774,7 +1774,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "6efab3ca-a48a-4530-bfa0-3e28fd8e4edb",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1818,7 +1818,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "b188f7ee-1a01-42cb-8112-fd6afbf96da6",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1862,7 +1862,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "570d24a9-9265-4005-994b-4ffdc1e3258c",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1893,7 +1893,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "9e2c011f-6168-4df5-9609-b9bf29cc5505",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
@@ -1959,7 +1959,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "403ca9ad-019f-4dff-b704-df87aa2f0967",
+          "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
