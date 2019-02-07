@@ -24,6 +24,17 @@
   padding: 10px; 
 }
 
+.base-url-container {
+  align-self: flex-start; 
+}
+
+.base-url-container h3 {
+  margin: 20px;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600; 
+}
+
 .logo-text {
   margin: 0; 
   font-size: 3rem; 
