@@ -63,13 +63,15 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        request: `{
+        request: `
+        {
           "name": "New York City",
           "state": "NY",
           "population": 8622698,
           "capital": false,
         }`,
-        response: `{
+        response: `
+        {
           "id": 3,
           "name": "Los Angeles",
           "state": "CA",
@@ -99,7 +101,8 @@ module.exports = {
       },
       examples: {
         request: null,
-        response: `[
+        response: `
+        [
           {
               "id": 1,
               "name": "Los Tacos No. 1",
@@ -154,7 +157,8 @@ module.exports = {
       },
       examples: {
         request: null,
-        response: `[
+        response: `
+        [
           {
             "id": 19,
             "name": "Denver",
@@ -184,7 +188,8 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        request: `{
+        request: `
+        {
           "name": "Denver",
           "state": "CO",
           "population": 704621,
@@ -232,7 +237,8 @@ module.exports = {
       },
       examples: {
         request: null, 
-        response: `[
+        response: `
+        [
           {
             "id": 204,
             "name": "Machete Tequila + Tacos",
@@ -264,7 +270,8 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        request: `{
+        request: `
+        {
           "name": "Machete Tequila + Tacos",
           "address": "2817 East 3rd Avenue, Denver 80206",
           "city": "Denver",
@@ -314,7 +321,8 @@ module.exports = {
       },
       examples: {
         request: null,
-        response: `[
+        response: `
+        [
           {
               "id": 205,
               "name": "Margs Taco Bistro",
@@ -369,14 +377,16 @@ module.exports = {
         updated_at: 'timestamp'
       },
       examples: {
-        request: `{
+        request: `
+        {
           "name": "Torchy's Tacos",
           "address": "1085 North Broadway 80203",
           "city": "Denver",
           "rating": 3,
           "avg_cost": "$25"
         }`,
-        response: `{
+        response: `
+        {
           "id": 207,
           "name": "Torchy's Tacos",
           "address": "1085 North Broadway 80203",
