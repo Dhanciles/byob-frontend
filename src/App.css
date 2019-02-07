@@ -1,3 +1,8 @@
+
+* {
+  box-sizing: border-box;
+}
+
 .doc-header {
   background-color: #E60000;
   color: #ffffff; 
@@ -28,3 +33,39 @@
   margin-bottom: 30px;  
 }
 
+pre {
+  text-align: left;
+  background: lightgray;
+  padding: 20px 30px 40px 0;
+  color: black;
+}
+
+button {
+  width: 100px;
+}
+
+.endpoint-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-area {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.endpoint-item-container {
+  background: #808080;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  color: white;
+}
+
+.button-and-path-container {
+  display: flex;
+  justify-content: flex-start;
+}

@@ -7,7 +7,7 @@ export const EndPointContainer = () => {
   const endpoints = endpointData.endpoints.map(endpoint => (<EndPointItem key={uuid()} data={endpoint} />))
 
   return (
-    <div>
+    <div className="endpoint-container">
       { endpoints }
     </div>
   )

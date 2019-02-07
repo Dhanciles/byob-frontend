@@ -14,7 +14,8 @@ module.exports = {
       },
       examples: {
         request: null,
-        response: `[
+        response: `
+        [
           {
               "id": 1,
               "name": "New York City",
