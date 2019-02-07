@@ -28,6 +28,17 @@
   padding: 10px; 
 }
 
+.base-url-container {
+  align-self: flex-start; 
+}
+
+.base-url-container h3 {
+  margin: 20px;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600; 
+}
+
 .logo-text {
   margin: 0; 
   font-size: 3rem; 
@@ -52,13 +63,10 @@ pre {
   color: black;
 }
 
-button {
-  width: 100px;
-  border-radius: 5px;
-}
-
 .url-path {
   margin: 15px 0;
+  font-size: 2rem; 
+  font-weight: 800
 }
 
 .endpoint-container {
@@ -88,15 +96,22 @@ button {
   margin-left: 20px;
 }
 
-.info-area {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
+button {
+  width: 200px;
+  cursor: pointer; 
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #364F5C; 
+  color: #ffffff; 
 }
 
 .button-and-path-container {
   display: flex;
   justify-content: flex-start;
+  background-color: #364F5C; 
 }
 
 .about {
