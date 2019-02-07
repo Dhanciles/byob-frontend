@@ -1,4 +1,5 @@
 import React, { Component } from 'react';  
+import './EndPointItem.css';
 
 export default class EndPointItem extends Component {
   constructor(props) {
@@ -22,11 +23,11 @@ export default class EndPointItem extends Component {
       itemBody = (
         <div className="info-area">
           <h3>Example {Object.keys(examples)[0]}:</h3>
-          <pre>{examples.request || 'None'}</pre>
+          <pre className="example-text">{examples.request || 'None'}</pre>
           <p>Successful Status Code: <span>{successful_status_code}</span></p>
           <p>This endpoint returns: {returns}</p>
           <h3>Example {Object.keys(examples)[1]}:</h3>
-          <pre>{examples.response}</pre>
+          <pre className="example-text">{examples.response}</pre>
         </div>
       )
       selectedClass = 'selected';
