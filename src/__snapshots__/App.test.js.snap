@@ -19,8 +19,8 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <aside
-          className="doc-aside"
+        <header
+          className="doc-header"
         >
           <span
             className="logo-container"
@@ -36,7 +36,29 @@ ShallowWrapper {
           >
             Find Top Taco Restaurants Across the US!
           </h3>
-        </aside>,
+        </header>,
+        <section
+          className="about"
+        >
+          <h2>
+            Welcome!
+          </h2>
+          <p>
+            This API is designed to provide data on many of the best taco restaurants in cities all across the US. All of the endpoints below exist at the base URL:
+          </p>
+          <p>
+            <a
+              href="https://kylie-joel-byob.herokuapp.com"
+              target="_blank"
+            >
+              https://kylie-joel-byob.herokuapp.com
+            </a>
+            .
+          </p>
+          <p>
+            Please enjoy the data we've provided. If you're building an app or website that uses this data, let us know! We'd love to hear from you!
+          </p>
+        </section>,
         <EndPointContainer />,
       ],
       "className": "app-container",
@@ -64,7 +86,7 @@ ShallowWrapper {
               Find Top Taco Restaurants Across the US!
             </h3>,
           ],
-          "className": "doc-aside",
+          "className": "doc-header",
         },
         "ref": null,
         "rendered": Array [
@@ -108,7 +130,106 @@ ShallowWrapper {
             "type": "h3",
           },
         ],
-        "type": "aside",
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Welcome!
+            </h2>,
+            <p>
+              This API is designed to provide data on many of the best taco restaurants in cities all across the US. All of the endpoints below exist at the base URL:
+            </p>,
+            <p>
+              <a
+                href="https://kylie-joel-byob.herokuapp.com"
+                target="_blank"
+              >
+                https://kylie-joel-byob.herokuapp.com
+              </a>
+              .
+            </p>,
+            <p>
+              Please enjoy the data we've provided. If you're building an app or website that uses this data, let us know! We'd love to hear from you!
+            </p>,
+          ],
+          "className": "about",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Welcome!",
+            },
+            "ref": null,
+            "rendered": "Welcome!",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "This API is designed to provide data on many of the best taco restaurants in cities all across the US. All of the endpoints below exist at the base URL:",
+            },
+            "ref": null,
+            "rendered": "This API is designed to provide data on many of the best taco restaurants in cities all across the US. All of the endpoints below exist at the base URL:",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  href="https://kylie-joel-byob.herokuapp.com"
+                  target="_blank"
+                >
+                  https://kylie-joel-byob.herokuapp.com
+                </a>,
+                ".",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "https://kylie-joel-byob.herokuapp.com",
+                  "href": "https://kylie-joel-byob.herokuapp.com",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "https://kylie-joel-byob.herokuapp.com",
+                "type": "a",
+              },
+              ".",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Please enjoy the data we've provided. If you're building an app or website that uses this data, let us know! We'd love to hear from you!",
+            },
+            "ref": null,
+            "rendered": "Please enjoy the data we've provided. If you're building an app or website that uses this data, let us know! We'd love to hear from you!",
+            "type": "p",
+          },
+        ],
+        "type": "section",
       },
       Object {
         "instance": null,
@@ -129,8 +250,8 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <aside
-            className="doc-aside"
+          <header
+            className="doc-header"
           >
             <span
               className="logo-container"
@@ -146,7 +267,29 @@ ShallowWrapper {
             >
               Find Top Taco Restaurants Across the US!
             </h3>
-          </aside>,
+          </header>,
+          <section
+            className="about"
+          >
+            <h2>
+              Welcome!
+            </h2>
+            <p>
+              This API is designed to provide data on many of the best taco restaurants in cities all across the US. All of the endpoints below exist at the base URL:
+            </p>
+            <p>
+              <a
+                href="https://kylie-joel-byob.herokuapp.com"
+                target="_blank"
+              >
+                https://kylie-joel-byob.herokuapp.com
+              </a>
+              .
+            </p>
+            <p>
+              Please enjoy the data we've provided. If you're building an app or website that uses this data, let us know! We'd love to hear from you!
+            </p>
+          </section>,
           <EndPointContainer />,
         ],
         "className": "app-container",
@@ -174,7 +317,7 @@ ShallowWrapper {
                 Find Top Taco Restaurants Across the US!
               </h3>,
             ],
-            "className": "doc-aside",
+            "className": "doc-header",
           },
           "ref": null,
           "rendered": Array [
@@ -218,7 +361,106 @@ ShallowWrapper {
               "type": "h3",
             },
           ],
-          "type": "aside",
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Welcome!
+              </h2>,
+              <p>
+                This API is designed to provide data on many of the best taco restaurants in cities all across the US. All of the endpoints below exist at the base URL:
+              </p>,
+              <p>
+                <a
+                  href="https://kylie-joel-byob.herokuapp.com"
+                  target="_blank"
+                >
+                  https://kylie-joel-byob.herokuapp.com
+                </a>
+                .
+              </p>,
+              <p>
+                Please enjoy the data we've provided. If you're building an app or website that uses this data, let us know! We'd love to hear from you!
+              </p>,
+            ],
+            "className": "about",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Welcome!",
+              },
+              "ref": null,
+              "rendered": "Welcome!",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "This API is designed to provide data on many of the best taco restaurants in cities all across the US. All of the endpoints below exist at the base URL:",
+              },
+              "ref": null,
+              "rendered": "This API is designed to provide data on many of the best taco restaurants in cities all across the US. All of the endpoints below exist at the base URL:",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    href="https://kylie-joel-byob.herokuapp.com"
+                    target="_blank"
+                  >
+                    https://kylie-joel-byob.herokuapp.com
+                  </a>,
+                  ".",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "https://kylie-joel-byob.herokuapp.com",
+                    "href": "https://kylie-joel-byob.herokuapp.com",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": "https://kylie-joel-byob.herokuapp.com",
+                  "type": "a",
+                },
+                ".",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Please enjoy the data we've provided. If you're building an app or website that uses this data, let us know! We'd love to hear from you!",
+              },
+              "ref": null,
+              "rendered": "Please enjoy the data we've provided. If you're building an app or website that uses this data, let us know! We'd love to hear from you!",
+              "type": "p",
+            },
+          ],
+          "type": "section",
         },
         Object {
           "instance": null,
