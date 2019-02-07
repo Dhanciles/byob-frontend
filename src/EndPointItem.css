@@ -1,0 +1,16 @@
+pre {
+  padding: 10px; 
+}
+
+h3 {
+  font-size: 2rem; 
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.example-text {
+  font-size: 1.5rem; 
+  font-weight: 600; 
+}
