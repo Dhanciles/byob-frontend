@@ -1,5 +1,8 @@
-.App {
+/* .App {
   text-align: center;
+} */
+* {
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -29,4 +32,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+pre {
+  text-align: left;
+  background: lightgray;
+  padding: 20px 30px 40px 0;
+  color: black;
+}
+
+button {
+  width: 100px;
+}
+
+/* .info-area {
+  width: 75%;
+} */
+
+.endpoint-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-area {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  /* align-items: center; */
+}
+
+.endpoint-item-container {
+  background: #808080;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  color: white;
+  /* padding: 50px; */
+  /* align-items: center; */
+}
+
+.button-and-path-container {
+  display: flex;
+  justify-content: flex-start;
 }

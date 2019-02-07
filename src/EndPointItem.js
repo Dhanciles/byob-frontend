@@ -16,7 +16,8 @@ export default class EndPointItem extends Component {
   
   render() {
     const { method, path, examples, successful_status_code, returns } = this.props.data;
-    let itemBody = ''
+    let itemBody = '';
+    let selectedClass = '';
     if(this.state.selected) {
       itemBody = (
         <div className="info-area">
@@ -28,14 +29,17 @@ export default class EndPointItem extends Component {
           <pre>{examples.response}</pre>
         </div>
       )
+      selectedClass = 'selected';
     }
 
     return (
-      <div className="endpoint-item-container">
-        <button onClick={this.handleClick}>{method}</button>
-        <span className="endpoint-text-container">
-          <p className="url-path">{path}</p>
-        </span>
+      <div className={`endpoint-item-container ${selectedClass}`}>
+        <div className="button-and-path-container">
+          <button onClick={this.handleClick}>{method}</button>
+          <span className="endpoint-text-container">
+            <p className="url-path">{path}</p>
+          </span>
+        </div>
         {itemBody}
       </div>
     );
