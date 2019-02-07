@@ -390,7 +390,9 @@ ShallowWrapper {
             request
             :
           </h3>
-          <pre>
+          <pre
+            className="example-text"
+          >
             None
           </pre>
           <p>
@@ -408,7 +410,9 @@ ShallowWrapper {
             response
             :
           </h3>
-          <pre>
+          <pre
+            className="example-text"
+          >
             
         [
           {
@@ -524,7 +528,9 @@ ShallowWrapper {
               request
               :
             </h3>,
-            <pre>
+            <pre
+              className="example-text"
+            >
               None
             </pre>,
             <p>
@@ -542,7 +548,9 @@ ShallowWrapper {
               response
               :
             </h3>,
-            <pre>
+            <pre
+              className="example-text"
+            >
               
         [
           {
@@ -604,6 +612,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "None",
+              "className": "example-text",
             },
             "ref": null,
             "rendered": "None",
@@ -709,6 +718,7 @@ ShallowWrapper {
               \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
           }
         ]",
+              "className": "example-text",
             },
             "ref": null,
             "rendered": "
@@ -782,7 +792,9 @@ ShallowWrapper {
               request
               :
             </h3>
-            <pre>
+            <pre
+              className="example-text"
+            >
               None
             </pre>
             <p>
@@ -800,7 +812,9 @@ ShallowWrapper {
               response
               :
             </h3>
-            <pre>
+            <pre
+              className="example-text"
+            >
               
         [
           {
@@ -916,7 +930,9 @@ ShallowWrapper {
                 request
                 :
               </h3>,
-              <pre>
+              <pre
+                className="example-text"
+              >
                 None
               </pre>,
               <p>
@@ -934,7 +950,9 @@ ShallowWrapper {
                 response
                 :
               </h3>,
-              <pre>
+              <pre
+                className="example-text"
+              >
                 
         [
           {
@@ -996,6 +1014,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "None",
+                "className": "example-text",
               },
               "ref": null,
               "rendered": "None",
@@ -1101,6 +1120,7 @@ ShallowWrapper {
               \\"updated_at\\": \\"2019-02-05T00:54:20.906Z\\"
           }
         ]",
+                "className": "example-text",
               },
               "ref": null,
               "rendered": "
