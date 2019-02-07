@@ -37,7 +37,11 @@
   font-size: 1.5rem; 
 }
 
-h3, p {
+h3 {
+  margin: 20px 0 0 0;
+} 
+
+p {
   margin: 0;
 }
 
@@ -84,36 +88,10 @@ button {
   margin-left: 20px;
 }
 
-pre {
-  text-align: left;
-  background: lightgray;
-  padding: 20px 30px 40px 0;
-  color: black;
-}
-
-button {
-  width: 100px;
-}
-
-.endpoint-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .info-area {
   display: flex;
   flex-direction: column;
   padding: 50px;
-}
-
-.endpoint-item-container {
-  background: #808080;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  color: white;
 }
 
 .button-and-path-container {
