@@ -16,9 +16,6 @@ class App extends Component {
           <h2>Welcome!</h2>
           <p>This API is designed to provide data on many of the best taco restaurants in cities all across the US. All of the endpoints below exist at the base URL <a href="https://kylie-joel-byob.herokuapp.com" target="_blank">https://kylie-joel-byob.herokuapp.com</a>. Please enjoy the data we've provided. If you're building an app or website that uses this data, let us know! We'd love to hear from you!</p>
         </section>
-          <span className="base-url-container">
-          <h3>[Base URL: https://kylie-joel-byob.herokuapp.com]</h3>
-        </span>
         <EndPointContainer />
       </div>
     );
